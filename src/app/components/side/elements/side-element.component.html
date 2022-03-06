@@ -1,0 +1,25 @@
+<div class="row mt-4" *ngFor="let e of elements; let i = index;">
+    <div class="row">
+        <span class="avenir-black">{{e.title}}</span>
+    </div>
+    <div class="row ml-5 mt-1">
+        <div *ngFor="let item of e.elements; let j = index;">
+            <ng-container [ngSwitch]="e.style">
+                <ng-template ngSwitchCase="checkbox">
+                    <label class="form-check-label avenir-book" [for]="'check-'+e.title+'-'+j" [ngClass]="item.checked ? 'text-marked' : 'text-black'">
+                        <input class="form-check-input square-20" type="checkbox" value="" [id]="'check-'+e.title+'-'+j" [checked]="item.checked">
+                        <span class="mx-2 ">{{item.description}} ({{item.quantity}})</span>
+                    </label>
+                </ng-template>
+                <ng-template ngSwitchCase="stars">
+                    <label class="form-check-label avenir-book" [for]="'check-'+e.title+'-'+j" [ngClass]="item.checked ? 'text-marked' : 'text-black'">
+                        <input class="form-check-input square-20" type="checkbox" value="" [id]="'check-'+e.title+'-'+j" [checked]="item.checked">
+                        <span class="mx-1" *ngFor="let _ of [].constructor(item.rate)"> <img width="13px" height="12px" src = "../../../../assets/icons/star.svg" alt="Star SVG"/></span>
+                        <span class="mx-1" *ngFor="let _ of [].constructor((item.tot!) - (item.rate!))"><img width="13px" height="12px" src = "../../../../assets/icons/star_white.svg" alt="My Happy SVG"/></span>
+                        <span class="mx-1"> ({{item.quantity}})</span>
+                    </label>
+                </ng-template>
+            </ng-container>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+img {
+  background: #00000008 0% 0% no-repeat padding-box;
+}
+
+.card {
+  width: 394px !important;
+  border: none;
+}
+
+.card-box {
+  width: 65%
+}
+
+.heart_gray {
+  z-index: 3;
+  position: absolute;
+  background: transparent;
+  width: 20px;
+  height: 17px;
+  right: 14px;
+  top: 12px;
+}
+
+.label {
+  z-index: 3;
+  position: absolute;
+  top: 12px;
+  text-align: center;
+  color: white;
+  background: #FD6600 0% 0% no-repeat padding-box;
+  border-radius: 0px 3px 3px 0px;
+  width: 108px;
+  height: 26px;
+  border: none;
+}
+
+.mt-4 {
+  margin-top: 30px !important;
+}
+
+.card-description {
+  line-height: 17px;
+}

@@ -1,0 +1,37 @@
+<div class="row main border-left">
+    <div class="row mx-2 row-cols-1 row-cols-md-3">
+        <div *ngFor="let product of products; let i = index;" class="col" [ngClass]="i > 2 ? 'mt-4' : ''">
+            <div class="card">
+                <img class="image" [src]="'../../../../assets/'+product.img" />
+                <img class="heart_gray" src="../../../../assets/icons/heart_gray.svg" />
+                <div class="label" *ngIf="product.label">
+                    <span class="avenir-black text-white">{{product.label}}</span>
+                </div>
+                <div class="card-box">
+                    <span class="card-title avenir-black">{{product .brand}}</span>
+                    <p class="margin-bottom-0 avenir-book card-description">{{product .description}}</p>
+                </div>
+                <div class="price border-bottom my-1">
+                    <span class="avenir-black fs-5" [ngClass]="product.text_marked ? 'orange' : ''">{{product.price}} € </span>
+                    <span class="avenir-black text-decoration-line-through mx-2 grey"*ngIf="product.discount"> {{product.discount}} €</span>
+                    <p class="avenir-black margin-bottom-1" [ngClass]="product.text_marked ? 'orange' : ''">Sopralluogo e installazione inclusi</p>
+                </div>
+                <div class="row">
+                    <div class="col float-start">
+                        <span class="mx-1"><img width="13px" height="12px" src = "../../../../assets/icons/star.svg" alt="Star SVG"/></span>
+                        <span class="mx-1"><img width="13px" height="12px" src = "../../../../assets/icons/star.svg" alt="Star SVG"/></span>
+                        <span class="mx-1"><img width="13px" height="12px" src = "../../../../assets/icons/star.svg" alt="Star SVG"/></span>
+                        <span class="mx-1"><img width="13px" height="12px" src = "../../../../assets/icons/star.svg" alt="Star SVG"/></span>
+                        <span class="mx-1"><img width="13px" height="12px" src = "../../../../assets/icons/star_white.svg" alt="Empty Star SVG"/></span>
+                    </div>
+                    <div class="col float-end">
+                        <label class="float-end form-check-label avenir-book" for="compare">
+                            <span class="mx-2 avenir-black text-marked">CONFRONTA</span>
+                            <input class="form-check-input square-20" type="checkbox" id="compare">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+.orange {
+  color: #FD6600 !important;
+}
+
+.grey {
+  color: #b9b9b9 !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 8px !important;
+}
+
+.padding-left-revert {
+  padding-left: revert !important;
+}
+
+.check-text-center {
+  bottom: 2px !important;
+  position: relative !important;
+}
+
+.square-20 {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 0;
+}
+
+.square-20:checked {
+  background-color: #5738FF !important;
+  border-color: #5738FF !important;
+}
+
+.avenir-black {
+  font: normal normal 900 12px/20px Avenir-Black;
+  letter-spacing: 0.6px;
+  color: #000000;
+}
+
+.avenir-medium {
+  font: normal normal normal 15px/20px Avenir-Medium;
+  color: #5738FF;
+}
+
+.avenir-book {
+  text-align: left;
+  font: normal normal normal 15px/28px Avenir-Medium;
+  color: #000000;
+}
+
+.text-marked {
+  color: #5738FF !important;
+}
+
+
+.border-left {
+  border-left: 1px solid #dee2e6!important
+}
+
+.border-right {
+  border-right:1px solid #dee2e6!important
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: Avenir-Black;
+  src: url(assets/fonts/Avenir-Black.woff2);
+}
+@font-face {
+  font-family: Avenir-Light;
+  src: url(assets/fonts/Avenir-Light.woff2);
+}
+@font-face {
+  font-family: Avenir-Medium;
+  src: url(assets/fonts/Avenir-Medium.woff);
+}@font-face {
+  font-family: Avenir-Book;
+  src: url(assets/fonts/Avenir-Book.woff);
+}
+@font-face {
+  font-family: icomoon;
+  src: url(assets/fonts/icomoon.woff);
+}
