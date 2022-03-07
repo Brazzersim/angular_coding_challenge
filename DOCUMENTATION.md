@@ -45,6 +45,6 @@ per effettuare il confronto, e,  una volta arrivati al numero, abilitare il puls
 
 
 
-#Changelogs
+## Changelogs
 
 Mi dispiace per non aver implementato correttamente il meccanismo di conventional commits, non l'ho mai usato precedentemente e credo di aver installato una libreria un po' buggata.
