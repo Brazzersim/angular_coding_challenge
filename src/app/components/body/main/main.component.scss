@@ -2,6 +2,10 @@ img {
   background: #00000008 0% 0% no-repeat padding-box;
 }
 
+.main {
+  height: 95%;
+}
+
 .card {
   width: 394px !important;
   border: none;
@@ -11,7 +15,7 @@ img {
   width: 65%
 }
 
-.heart_gray {
+.heart_gray, .heart {
   z-index: 3;
   position: absolute;
   background: transparent;
@@ -20,6 +24,11 @@ img {
   right: 14px;
   top: 12px;
 }
+
+.heart_gray:hover, .heart:hover {
+  cursor: pointer;
+}
+
 
 .label {
   z-index: 3;

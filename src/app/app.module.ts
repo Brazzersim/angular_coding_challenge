@@ -8,6 +8,8 @@ import {SideComponent} from './components/side/side.component';
 import {StaticDataService} from './services/static/static-data.component';
 import {BodyComponent} from './components/body/body.component';
 import {MainComponent} from './components/body/main/main.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import {MainComponent} from './components/body/main/main.component';
     SideComponent,
     SideElementComponent,
     BodyComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgbModule
   ],
   providers: [

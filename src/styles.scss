@@ -51,10 +51,14 @@
   color: #000000;
 }
 
+.avenir-book-footer {
+  font: normal normal normal 20px/26px Avenir-Book;
+  color: #000000;
+}
+
 .text-marked {
   color: #5738FF !important;
 }
-
 
 .border-left {
   border-left: 1px solid #dee2e6!important
@@ -62,6 +66,24 @@
 
 .border-right {
   border-right:1px solid #dee2e6!important
+}
+
+.h-120px {
+  height: 120px;
+}
+
+.page-link {
+  border-radius: 50% !important;
+  border: none !important;
+  color: #5738FF !important;
+  margin-left: 1px !important;
+  
+  &_active {
+    border-radius: 50% !important;
+    border: none !important;
+    background-color: #5738FF !important;
+    color: white !important;
+  }
 }
 
 

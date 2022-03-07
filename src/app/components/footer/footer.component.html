@@ -1,0 +1,27 @@
+<div class="footer-container" [@showHide]="isOpen ? 'show' : 'hide'">
+    <div class="row align-items-center h-100 mx-3">
+        <div class="col-6">
+            <span class="avenir-book-footer text-white" *ngIf="num_prod > 0">Seleziona altri {{num_prod}} prodotti per confrontarli</span>
+            <span class="avenir-book-footer text-white" *ngIf="num_prod <= 0">Confronta i prodotti!</span>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-footer float-end" [disabled]="!(num_prod <= 0)" (click)="openModal(content)"><span class="avenir-black text-white">CONFRONTA</span></button>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Confronto fra prodotti</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <ul>
+            <li *ngFor="let sel of staticData.selection">{{sel.brand}} - {{sel.price}}€</li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Esci</button>
+    </div>
+</ng-template>

@@ -14,6 +14,5 @@ export class SideElementComponent implements OnInit{
     }
     
     ngOnInit(): void {
-        console.log(this.elements);
     }
 }
